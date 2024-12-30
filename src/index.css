@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Beautify the scrollbar */
+.sliderbar::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+}
+
+.sliderbar {
+  scrollbar-width: thin; /* For Firefox: thin scrollbar */
+  scrollbar-color: #454b54 #252b36; /* For Firefox: thumb and track colors */
+}
