@@ -5,7 +5,7 @@ function SidebarHeader() {
     <div className="flex items-center justify-between px-5 py-3 bg-sidebarColor-header border-b border-[#454b54]">
       <a href="/" className="py-2 ml-5">
         <img
-          src="../../../public/assets/images/logo_light.png"
+          src="/assets/images/logo_light.png"
           alt="logo"
           className="h-[32px]"
         />

@@ -41,7 +41,7 @@ function SidebarCustomer() {
       >
         <div className="flex items-center space-x-3">
           <img
-            src="../../../public/assets/images/shell.svg"
+            src="/assets/images/shell.svg"
             alt="Customer Logo"
             className="w-8 h-8 rounded-full"
           />
