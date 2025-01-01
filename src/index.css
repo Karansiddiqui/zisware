@@ -3,10 +3,33 @@
 @tailwind utilities;
 
 /* Beautify the scrollbar */
+/* For Webkit browsers like Chrome, Safari */
 .sliderbar::-webkit-scrollbar {
   width: 3px; /* Width of the scrollbar */
+  height: 3px; /* Height of horizontal scrollbar (if any) */
 }
 
+.sliderbar::-webkit-scrollbar-button {
+  display: none; /* Removes both vertical and horizontal arrows */
+}
+
+.sliderbar::-webkit-scrollbar-button:start {
+  display: none; /* Removes the upper vertical arrow */
+}
+
+.sliderbar::-webkit-scrollbar-button:end {
+  display: none; /* Removes the lower vertical arrow */
+}
+
+.sliderbar::-webkit-scrollbar-track {
+  background: #252b36; /* Track color */
+}
+
+.sliderbar::-webkit-scrollbar-thumb {
+  background: #454b54; /* Thumb color */
+}
+
+/* For Firefox */
 .sliderbar {
   scrollbar-width: thin; /* For Firefox: thin scrollbar */
   scrollbar-color: #454b54 #252b36; /* For Firefox: thumb and track colors */
